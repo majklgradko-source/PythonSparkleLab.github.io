@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Изучение Python - Интерактивный обучающий сайт</title>
+    <!-- Подключаем CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Подключаем иконки Font Awesome (как на примере) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Подключаем красивый шрифт с Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Главный контейнер, как на целевом сайте -->
+    <div class="container">
+        <!-- Шапка сайта -->
+        <header class="header">
+            <div class="logo">
+                <i class="fas fa-gem"></i> <!-- Иконка "бриллианта" как в примере -->
+                <span>Python Sparkle Lab</span>
+            </div>
+            <nav class="nav">
+                <a href="#intro" class="nav-link active">Введение</a>
+                <a href="#advantages" class="nav-link">Преимущества</a>
+                <a href="#usage" class="nav-link">Использование</a>
+                <a href="#code" class="nav-link">Код</a>
+            </nav>
+            <button class="cta-button" id="startLearningBtn">
+                <i class="fas fa-rocket"></i> Начать изучать
+            </button>
+        </header>
+
+        <!-- Основной контент -->
+        <main class="main-content">
+            <!-- Герой-секция -->
+            <section class="hero">
+                <h1 class="hero-title">Обучение <span class="highlight">Python</span></h1>
+                <p class="hero-subtitle">Погрузитесь в мир программирования с интерактивными уроками и понятными примерами.</p>
+            </section>
+
+            <!-- Секция "Введение" -->
+            <section class="section" id="intro">
+                <h2><i class="fas fa-book-open section-icon"></i> Введение в Python</h2>
+                <p>Python — это высокоуровневый язык программирования общего назначения, который отличается простотой синтаксиса и читаемостью кода. Идеально подходит для начинающих программистов.</p>
+                <div class="card">
+                    <h3>Что такое Python?</h3>
+                    <p>Python был создан Гвидо ван Россумом и впервые выпущен в 1991 году. Название языка произошло от британского комедийного шоу "Летающий цирк Монти Пайтона".</p>
+                    <p>Python используется в веб-разработке, анализе данных, машинном обучении, автоматизации, научных вычислениях и многих других областях.</p>
+                </div>
+            </section>
+
+            <!-- Секция "Преимущества" -->
+            <section class="section" id="advantages">
+                <h2><i class="fas fa-star section-icon"></i> Преимущества Python</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <i class="fas fa-code feature-icon"></i>
+                        <h4>Простой синтаксис</h4>
+                        <p>Легко читается и пишется, напоминает псевдокод.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-book feature-icon"></i>
+                        <h4>Большая библиотека</h4>
+                        <p>Обширная стандартная библиотека для решения множества задач.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-users feature-icon"></i>
+                        <h4>Активное сообщество</h4>
+                        <p>Множество разработчиков, готовых помочь и поделиться опытом.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Секция "Где используется?" -->
+            <section class="section" id="usage">
+                <h2><i class="fas fa-globe section-icon"></i> Где используется Python?</h2>
+                <div class="usage-grid">
+                    <div class="usage-category">
+                        <h3><i class="fas fa-laptop-code"></i> Веб-разработка</h3>
+                        <p class="frameworks">Django, Flask, FastAPI</p>
+                    </div>
+                    <div class="usage-category">
+                        <h3><i class="fas fa-chart-line"></i> Data Science</h3>
+                        <p class="frameworks">Pandas, NumPy, Matplotlib</p>
+                    </div>
+                    <div class="usage-category">
+                        <h3><i class="fas fa-brain"></i> Машинное обучение</h3>
+                        <p class="frameworks">TensorFlow, PyTorch, scikit-learn</p>
+                    </div>
+                    <div class="usage-category">
+                        <h3><i class="fas fa-robot"></i> Автоматизация</h3>
+                        <p class="frameworks">Скрипты, тестирование, DevOps</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Секция с примером кода -->
+            <section class="section code-section" id="code">
+                <h2><i class="fas fa-terminal section-icon"></i> Ваша первая программа на Python</h2>
+                <div class="code-block">
+                    <pre><code># Это комментарий в Python
+print("Привет, мир!")
+
+# Переменные создаются просто
+name = "Python"
+version = 3.12
+
+print(f"Язык: {name}, версия: {version}")</code></pre>
+                    <button class="copy-code-btn" onclick="copyCode()">
+                        <i class="far fa-copy"></i> Копировать код
+                    </button>
+                </div>
+                <p class="code-note">Попробуйте запустить этот код в онлайн-интерпретаторе или на своём компьютере!</p>
+            </section>
+        </main>
+
+        
+    </div>
+
+    <!-- Подключаем JavaScript -->
+    <script src="script.js"></script>
+
+    <!-- Модальное окно выбора тем -->
+<div id="topicsModal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2><i class="fas fa-book-open"></i> Выберите тему для изучения</h2>
+            <button class="close-modal">&times;</button>
+        </div>
+        
+        <div class="modal-body">
+            <div class="topics-grid">
+                <!-- Тема 1: Основы Python -->
+                <div class="topic-card" data-topic="basics">
+                    <div class="topic-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Основы Python</h3>
+                    <p>Синтаксис, первая программа, комментарии</p>
+                    <div class="topic-duration">
+                        <i class="far fa-clock"></i> 15 минут
+                    </div>
+                </div>
+                
+                <!-- Тема 2: Переменные -->
+                <div class="topic-card" data-topic="variables">
+                    <div class="topic-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Переменные</h3>
+                    <p>Типы данных, присваивание, именование</p>
+                    <div class="topic-duration">
+                        <i class="far fa-clock"></i> 20 минут
+                    </div>
+                </div>
+                
+                <!-- Тема 3: Циклы -->
+                <div class="topic-card" data-topic="loops">
+                    <div class="topic-icon">
+                        <i class="fas fa-redo"></i>
+                    </div>
+                    <h3>Циклы</h3>
+                    <p>For, while, управление выполнением</p>
+                    <div class="topic-duration">
+                        <i class="far fa-clock"></i> 25 минут
+                    </div>
+                </div>
+                
+                <!-- Тема 4: Условия -->
+                <div class="topic-card" data-topic="conditions">
+                    <div class="topic-icon">
+                        <i class="fas fa-code-branch"></i>
+                    </div>
+                    <h3>Условия</h3>
+                    <p>If, else, elif, логические операторы</p>
+                    <div class="topic-duration">
+                        <i class="far fa-clock"></i> 20 минут
+                    </div>
+                </div>
+                
+                <!-- Тема 5: Модули -->
+                <div class="topic-card" data-topic="modules">
+                    <div class="topic-icon">
+                        <i class="fas fa-box"></i>
+                    </div>
+                    <h3>Модули</h3>
+                    <p>Import, создание и использование модулей</p>
+                    <div class="topic-duration">
+                        <i class="far fa-clock"></i> 18 минут
+                    </div>
+                </div>
+                
+                <!-- Тема 6: Строки -->
+                <div class="topic-card" data-topic="strings">
+                    <div class="topic-icon">
+                        <i class="fas fa-quote-right"></i>
+                    </div>
+                    <h3>Строки</h3>
+                    <p>Методы, форматирование, операции</p>
+                    <div class="topic-duration">
+                        <i class="far fa-clock"></i> 22 минуты
+                    </div>
+                </div>
+                
+                <!-- Тема 7: Работа с файлами -->
+                <div class="topic-card" data-topic="files">
+                    <div class="topic-icon">
+                        <i class="fas fa-file"></i>
+                    </div>
+                    <h3>Работа с файлами</h3>
+                    <p>Чтение, запись, обработка файлов</p>
+                    <div class="topic-duration">
+                        <i class="far fa-clock"></i> 30 минут
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
