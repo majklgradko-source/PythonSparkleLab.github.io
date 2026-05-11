@@ -1,4 +1,4 @@
-/* Общие сбросы и настройки */
+/* настройки */
 * {
     margin: 0;
     padding: 0;
@@ -19,7 +19,7 @@ body {
     padding: 0 20px;
 }
 
-/* Шапка сайта */
+/* Шапка */
 .header {
     display: flex;
     justify-content: space-between;
@@ -89,7 +89,7 @@ body {
     box-shadow: 0 6px 12px rgba(59, 130, 246, 0.3);
 }
 
-/* Основной контент */
+/* Основноке */
 .main-content {
     padding-bottom: 60px;
 }
@@ -147,7 +147,7 @@ body {
     margin-bottom: 12px;
 }
 
-/* Карточки преимуществ */
+/* преимущества */
 .features-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -179,7 +179,7 @@ body {
     color: #1e293b;
 }
 
-/* Сетка "Где используется?" */
+/* Где используется */
 .usage-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -263,9 +263,9 @@ code {
     color: #cbd5e1;
     font-style: italic;
 }
-/* Стили для модального окна */
+/* Стили модального */
 .modal {
-    display: none; /* Скрыто по умолчанию */
+    display: none; /* Скрыто */
     position: fixed;
     top: 0;
     left: 0;
@@ -392,7 +392,7 @@ code {
     font-weight: 500;
 }
 
-/* Стили для контента уроков */
+/* Стили уроков */
 .lesson-content {
     max-width: 800px;
     margin: 0 auto;
@@ -451,20 +451,20 @@ code {
     padding-top: 30px;
     border-top: 1px solid #e2e8f0;
 }
-/* Стили для модального окна уроков */
+/* Стили мод уроков */
 #lessonModal .modal-content {
     margin: 30px auto;
     width: 95%;
     max-width: 900px;
-    max-height: 90vh; /* Ограничиваем высоту */
+    max-height: 90vh; /* высота */
     display: flex;
     flex-direction: column;
-    overflow: hidden; /* Скрываем всё, что выходит за рамки */
+    overflow: hidden; /* Скрыв */
 }
 
-/* Заголовок урока - фиксированный */
+/* Заголовок */
 #lessonModal .modal-header {
-    flex-shrink: 0; /* Запрещаем сжатие */
+    flex-shrink: 0; /* сжатие */
     position: sticky;
     top: 0;
     z-index: 10;
@@ -473,22 +473,22 @@ code {
     padding: 20px 32px;
 }
 
-/* Тело урока - прокручиваемое */
+/* прокручиваемое */
 #lessonModal .modal-body {
-    flex: 1; /* Занимает всё доступное пространство */
-    overflow-y: auto; /* Включаем вертикальную прокрутку */
+    flex: 1; /* всёпространство */
+    overflow-y: auto; /* прокрутка */
     padding: 0;
-    max-height: calc(90vh - 80px); /* Вычитаем высоту заголовка */
+    max-height: calc(90vh - 80px); /* высота заголовка */
 }
 
-/* Контейнер контента урока */
+/* Контейнер урока */
 .lesson-content {
     padding: 32px;
     max-width: 800px;
     margin: 0 auto;
 }
 
-/* Улучшаем отображение кода */
+/* отображение кода */
 .lesson-code-block {
     max-width: 100%;
     overflow-x: auto;
@@ -497,13 +497,13 @@ code {
 }
 
 .lesson-code-block pre {
-    white-space: pre-wrap; /* Перенос длинных строк */
+    white-space: pre-wrap; /* Перенос строк */
     word-wrap: break-word;
     margin: 0;
     padding: 20px;
 }
 
-/* Кнопка копирования кода */
+/* Кнопка копирования */
 .copy-code-btn {
     position: absolute;
     top: 10px;
@@ -527,7 +527,7 @@ code {
     scroll-behavior: smooth;
 }
 
-/* Стили для секций урока */
+/* Стили урока */
 .lesson-section {
     margin-bottom: 40px;
     padding-bottom: 20px;
@@ -539,7 +539,7 @@ code {
     margin-bottom: 0;
 }
 
-/* Заголовки внутри урока */
+/* Заголовки урока */
 .lesson-section h2 {
     color: #3b82f6;
     margin: 25px 0 15px 0;
@@ -563,7 +563,7 @@ code {
     line-height: 1.7;
 }
 
-/* Кнопки действий внизу урока */
+/* Кнопки действий */
 .lesson-actions {
     position: sticky;
     bottom: 0;
@@ -577,7 +577,7 @@ code {
     z-index: 5;
 }
 
-/* Стили для полосы прокрутки */
+/* полоса прокрутки */
 #lessonModal .modal-body::-webkit-scrollbar {
     width: 8px;
 }
@@ -596,7 +596,7 @@ code {
     background: #a1a1a1;
 }
 
-/* Адаптивность для мобильных */
+/* Адаптивност */
 @media (max-width: 768px) {
     #lessonModal .modal-content {
         width: 98%;
